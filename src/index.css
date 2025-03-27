@@ -1,0 +1,493 @@
+.employee-management-header {
+  padding: 15px 20px 15px 20px;
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  z-index: 10001;
+}
+
+.employee-management-header .header-content {
+  padding: 11px 0 11px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.7);
+  display: inline-block;
+}
+
+.employee-management-content {
+  position: absolute;
+}
+
+.col-md-10.main-content .row.card-layout {
+  padding: 20px;
+}
+
+.employee-management-content .col-md-2.sidebar .title {
+  font-size: 1.2em;
+  padding-left: 15px;
+  color: #f3f3f4;
+  font-weight: bolder;
+  margin-bottom: 30px;
+} 
+
+.employee-management-content .col-md-2.sidebar {
+  width: 230px;
+  background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+  color: white;
+  position: fixed;
+  height: 100%;
+  padding-right: 0px;
+  padding-top: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.employee-management-content .col-md-10.main-content {
+  padding-right: 0px;
+  padding-left: 0px;
+  position: absolute;
+  left: 230px;
+  width: calc(100% - 275px);
+}
+
+@media (max-width: 426px) {
+  .employee-management-content .col-md-2.sidebar {
+    width: 155px;
+    float: left;
+  }
+  .employee-management-content .col-md-10.main-content {
+    width: calc(100% - 170px);
+    float: left;
+    position: sticky;
+    left: 200px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .employee-management-content .col-md-2.sidebar {
+    width: 185px;
+    float: left;
+  }
+  .employee-management-content .col-md-10.main-content {
+    width: calc(100% - 170px);
+    float: left;
+  }
+}
+@media (min-width:1300px) {
+  .employee-management-content .col-md-2.sidebar {
+    width: 240px;
+    float: left;
+  }
+  .employee-management-content .col-md-10.main-content {
+    width: calc(100% - 170px);
+    float: left;
+  }
+  .employee-management-content .col-md-10.main-content {
+    left: 170px;
+  }
+  #_tab_header_items .e-hscroll-content{
+    width: 100%;
+  }
+
+  #_tab_header_items .e-toolbar-item {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+@media (max-width:600px) {
+  .detail .information {
+      display: block;
+      padding-left: 0px;
+  }
+  .detail .sub-heading {
+    width: 130px;
+    padding-right: 10px;
+  }
+}
+
+.nav > li {
+  align-items: center;
+/* padding: 15px 20px; */
+color: #3a3b3c;
+text-decoration: none;
+transition: background-color 0.3s ease, color 0.3s ease;
+font-weight: 500;
+text-align: left;
+/* display: flex; */
+}
+.nav > li > a{
+  border: none;
+  border-radius: 5px;
+}
+.nav > li > a.active{
+  background-color: rgba(255, 255, 255, 0.37);
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.nav-item{
+  padding: 5px 10px 0px;
+  border-radius: 3px;
+}
+
+.employee-management-content .col-md-2.sidebar a.active {
+  color: #ffffff;
+}
+
+.policiespage a:focus,
+.policiespage a.active,
+.policiespage a:hover {
+  text-decoration: none;
+}
+.employee-management-content .col-md-2.sidebar a {
+  color: #FFF;
+}
+
+/* Employees Page */
+
+.employeespage .employees-header,
+.policiespage .policies-header,
+.announcementpage .announcement-header,
+.achievementspage .achievements-header,
+.employeeinfopage .employeeinfo-header {
+  padding: 20px;
+  height: 70px;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', 'GeezaPro', 'DejaVu Serif', 'sans-serif',
+    '-apple-system', 'BlinkMacSystemFont';
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.07);
+}
+
+#_tab_header_items {
+  width: 100%;
+}
+
+.overview-content #_tab_header_items .e-toolbar-item.e-active {
+  background-color: #1ab394;
+}
+.overview-content #_tab_header_items .e-toolbar-item.e-active .e-tab-text{
+  color: white;
+}
+.overview-content #_tab_header_items .e-indicator.e-ignore {
+  display: none;
+}
+
+.employeeinfopage .overview-header {
+  padding: 20px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  display: flex;
+  background-color: #E6E6FD;
+}
+
+a.employee-popover:hover {
+  text-decoration: none !important;
+}
+.tab-content {
+  padding: 20px 10px 20px 10px;
+}
+.employee-management-content .e-tab-header {
+  padding: 35px 10px 20px 35px;
+}
+
+/* Tooltip */
+
+.e-tooltip-wrap.e-popup {
+  background-color: #eaddff;
+  border: 1px solid #e0e0e0;
+}
+.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+  border-top: 8px solid #e0e0e0;
+}
+.e-tooltip-wrap .e-tip-content {
+  color: rgba(0, 0, 0, 0.87);
+}
+.e-tooltip-wrap {
+  opacity: 1;
+}
+.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom,
+.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top {
+  color: #eaddff;
+}
+
+/* Employee Pay Stub and PayRoll */
+
+.paystub-header,
+.payroll-header {
+  font-size: 13px;
+  font-family: 'Roboto', 'Segoe UI', 'GeezaPro', 'DejaVu Serif', 'sans-serif',
+    '-apple-system', 'BlinkMacSystemFont';
+  line-height: 20px;
+  padding: 0 0 50px 0;
+}
+
+.paystubinfo,
+.payrollinfo {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media (min-width: 600px) {
+  .paystubdd-container,
+  .payrolldd-container {
+    float: right;
+  }
+
+  .paystubinfo,
+  .payrollinfo {
+    padding-top: 8px;
+    display: inline-block;
+  }
+}
+/* Employee Info */
+
+.employeeinfo-header {
+  padding: 0 0 20px 0;
+}
+.profile-image {
+  width: 120px;
+  float: left;
+}
+.profile-data {
+  padding: 5px 0;
+}
+
+.employees-content #content {
+  height: calc(100vh - 150px);
+}
+
+.employeeLeave-header {
+  font-size: 13px;
+  font-family: 'Roboto', 'Segoe UI', 'GeezaPro', 'DejaVu Serif', 'sans-serif',
+    '-apple-system', 'BlinkMacSystemFont';
+  line-height: 20px;
+  padding: 0 0 50px 0;
+}
+
+.employeeLeave-header span {
+  margin: 0px 5px
+}
+
+.leaveinfo {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media (min-width: 600px) {
+  .daterange {
+    float: right;
+  }
+
+  .leaveinfo {
+    padding-top: 8px;
+    display: inline-block;
+  }
+}
+
+.daterange .e-input-group .e-clear-icon,
+.daterange .e-input-group.e-control-wrapper .e-clear-icon {
+  display: none;
+}
+
+.badge-casual {
+  background-color: #65cea7;
+  color: #fff;
+}
+
+.badge-sick {
+  background-color: #23c6c8;
+  color: #fff;
+}
+
+.badge-others {
+  background-color: #5c8a8a;
+  color: #fff;
+}
+
+.badge-request {
+  background-color: #f3ce85;
+  color: #fff;
+}
+
+td.cardcell {
+  padding: 4px 0 10px 0;
+}
+
+td.cardcell.separateline {
+  padding-bottom: 20px;
+}
+
+.detail {
+  padding-bottom: 20px;
+}
+
+.sub-heading {
+  font-weight: 400;
+  padding-right: 58px;
+  width: 205px;
+  display: inline-block;
+  color: #757575;
+}
+
+.information {
+  padding-left: 15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.statustemp .statustxt.closed,
+.statustemp .statustxt.approved,
+.statustemp .statustxt.needtoapprove {
+  position: relative;
+  top: 1.5px;
+}
+.statustemp.approved {
+  background-color: #ffff99;
+  width: 75px;
+}
+.statustxt.approved {
+  color: #006400;
+}
+.statustemp.needtoapprove {
+  background-color: #df2222;
+  width: 120px;
+}
+
+.statustemp.closed {
+  background-color: #00b300;
+  width: 54px;
+}
+
+.statustxt.closed {
+  color: white;
+}
+
+.statustxt.needtoapprove {
+  color: white;
+}
+
+.statustemp {
+  position: relative;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#listSidebar .e-listview:not(.e-list-template) .e-list-item {
+  height: 60px;
+  padding: 12px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Weather Card Layout Customization */
+
+.policiespage .row,
+.achievementspage .row,
+.announcementpage .row {
+  padding: 0 0 10px 0;
+}
+
+.achievementspage .e-card-content {
+  height: 100px;
+}
+
+.announcementpage .e-card-content {
+  height: 150px;
+}
+.policiespage .e-card-content {
+  height: 170px;
+}
+@media (min-width: 870px) {
+  .card-control-section.basic_card_layout .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+    width: 50%;
+  }
+
+  .achievements-content
+    .card-control-section.basic_card_layout
+    .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-control-section.basic_card_layout .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+    width: 100%;
+  }
+
+  .achievements-content
+    .card-control-section.basic_card_layout
+    .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+    width: 100%;
+  }
+
+  .card-control-section.basic_card_layout .card-layout {
+    max-width: 600px;
+  }
+}
+
+.profile-icon,
+.announcement-image,
+.organization-image,
+.achievement-image {
+  width: 13%;
+  text-align: right;
+}
+.icon-achieve:before,
+.icon-announce:before,
+.icon-organization:before,
+.icon-user:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+.icon-announce:before {
+  content: url('/public/SVG/announce.svg');
+}
+.icon-organization:before {
+  content: url('/public/SVG/organization.svg');
+}
+.icon-user:before {
+  content: url('/public/SVG/user.svg');
+}
+.icon-achieve:before {
+  content: url('/public/SVG/achieve.svg');
+}
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.paggingButton {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.paggingButton button {
+  line-height: 22px;
+  padding: 6.2px 14px;
+  background-color: #0f6cbd;
+  color: white;
+  border: 1px solid #0f6cbd;
+  border-radius: 4px;
+}
